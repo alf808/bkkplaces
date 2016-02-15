@@ -1,0 +1,160 @@
+{
+	"_id" : ObjectId("56bfcb8b81a6c3363dbcb9f1"),
+	"amenity" : "school",
+	"name" : "โรงเรียนสมิทธิพงษ์",
+	"created" : {
+		"changeset" : "26567849",
+		"user" : "charnchai",
+		"version" : "2",
+		"uid" : "454312",
+		"timestamp" : "2014-11-05T10:39:37Z"
+	},
+	"pos" : [
+		13.6621519,
+		100.4429017
+	],
+	"tagtype" : "node",
+	"bkkaddress" : {
+		"street" : "ถนนท่าข้าม",
+		"housenumber" : "45/9",
+		"postcode" : "10150"
+	},
+	"name_en" : "Smithipongse School",
+	"name_th" : "โรงเรียนสมิทธิพงษ์",
+	"id" : "1135640330"
+},
+{
+	"_id" : ObjectId("56bfcb8481a6c3363dba2a50"),
+	"name_ru" : "Сингбури",
+	"is_capital" : "province",
+	"name" : "สิงห์บุรี",
+	"created" : {
+		"changeset" : "35572119",
+		"user" : "etajin",
+		"version" : "15",
+		"uid" : "2480327",
+		"timestamp" : "2015-11-25T14:24:00Z"
+	},
+	"pos" : [
+		14.8918381,
+		100.3987566
+	],
+	"tagtype" : "node",
+	"source" : "GPS;survey;Wikipedia",
+	"place" : "town",
+	"alt_name" : "Singburi",
+	"bkkaddress" : {
+		"province" : "Sing Buri",
+		"country" : "TH",
+		"subdistrict" : "Nai Mueang",
+		"continent" : "Asia",
+		"district" : "Mueang Sing Buri"
+	},
+	"name_en" : "Sing Buri",
+	"name_th" : "สิงห์บุรี",
+	"name_ja" : "シンブリー",
+	"id" : "114123525",
+	"population" : "14772"
+},
+{
+	"_id" : ObjectId("56bfcb8581a6c3363dba5d31"),
+	"website" : "www.lebua.com/state-tower",
+	"name" : "lebua at State Tower",
+	"created" : {
+		"changeset" : "34856178",
+		"user" : "Paul_012",
+		"version" : "10",
+		"uid" : "100662",
+		"timestamp" : "2015-10-25T09:53:27Z"
+	},
+	"wheelchair" : "yes",
+	"pos" : [
+		13.7215136,
+		100.516885
+	],
+	"ele" : "21",
+	"phone" : "+6626249999",
+	"bkkaddress" : {
+		"city" : "แขวงสุริยวงศ์",
+		"street" : "ถนนสีลม",
+		"housenumber" : "1055 State Tower",
+		"postcode" : "10500"
+	},
+	"operator" : "lebua Hotels and Resorts",
+	"tagtype" : "node",
+	"tourism" : "hotel",
+	"id" : "257066461"
+},
+{
+	"_id" : ObjectId("56bfcb8681a6c3363dbaaf4f"),
+	"name" : "Floral Shire Resort",
+	"created" : {
+		"changeset" : "12800924",
+		"user" : "sturmflut",
+		"version" : "2",
+		"uid" : "5862",
+		"timestamp" : "2012-08-20T20:25:34Z"
+	},
+	"pos" : [
+		13.7181753,
+		100.7648962
+	],
+	"tagtype" : "node",
+	"bkkaddress" : {
+		"housenumber" : "56"
+	},
+	"tourism" : "hotel",
+	"id" : "317050229"
+},
+{
+	"_id" : ObjectId("56bfcb8681a6c3363dbab45a"),
+	"amenity" : "bank",
+	"name" : "Bangkok Bank",
+	"created" : {
+		"changeset" : "16481813",
+		"user" : "Chengings",
+		"version" : "3",
+		"uid" : "1531309",
+		"timestamp" : "2013-06-09T13:13:06Z"
+	},
+	"atm" : "yes",
+	"pos" : [
+		13.6482451,
+		100.4960531
+	],
+	"tagtype" : "node",
+	"phone" : "+662-872-6955",
+	"source" : "www.bangkokbank.com/BangkokBank/WebServices/LocateUs/Pages/Default.aspx",
+	"bkkaddress" : {
+		"city" : "Thung Kru",
+		"street" : "Pracha Uthit",
+		"housenumber" : "194-196-198",
+		"postcode" : "10140"
+	},
+	"id" : "330412272"
+},
+{
+	"_id" : ObjectId("56bfcb8681a6c3363dbac10e"),
+	"amenity" : "hospital",
+	"name" : "โรงพยาบาลธนบุรี",
+	"created" : {
+		"changeset" : "21469867",
+		"user" : "EarThPr",
+		"version" : "2",
+		"uid" : "1997152",
+		"timestamp" : "2014-04-03T05:09:47Z"
+	},
+	"pos" : [
+		13.7529428,
+		100.480116
+	],
+	"tagtype" : "node",
+	"bkkaddress" : {
+		"city" : "บางกอกน้อย",
+		"street" : "อิสรภาพ 44",
+		"postcode" : "10700"
+	},
+	"name_en" : "Thonburi Hospital",
+	"name_th" : "โรงพยาบาลธนบุรี",
+	"id" : "340033055"
+}

@@ -1,0 +1,36 @@
+{ "_id" : "name:nds-nl", "total" : 2 }
+{ "_id" : "name:fiu-vro", "total" : 2 }
+{ "_id" : "name:zh-min-nan", "total" : 2 }
+{ "_id" : "ราคา", "total" : 2 }
+{ "_id" : "name:zh-yue", "total" : 3 }
+{ "_id" : "Grand Heritage Thonglor", "total" : 1 }
+{ "_id" : "ZONE A", "total" : 1 }
+{ "_id" : "internet_access.source:fee", "total" : 1 }
+{ "_id" : "Made by", "total" : 4 }
+{ "_id" : "ISO3166-1:alpha2", "total" : 1 }
+{ "_id" : "name:zh-classical", "total" : 3 }
+{ "_id" : "alt_name:th-Latn", "total" : 2 }
+{ "_id" : "name:roa-tara", "total" : 2 }
+{ "_id" : "ISO3166-1:numeric", "total" : 1 }
+{ "_id" : "เปิด1", "total" : 1 }
+{ "_id" : "Dry cleaning machine", "total" : 1 }
+{ "_id" : "ZONE B", "total" : 1 }
+{ "_id" : "Number zone", "total" : 15 }
+{ "_id" : "name:Giant Swing", "total" : 1 }
+{ "_id" : "name:bat-smg", "total" : 3 }
+{ "_id" : "ISO3166-2", "total" : 24 }
+{ "_id" : "Washing machine", "total" : 1 }
+{ "_id" : "number zone", "total" : 16 }
+{ "_id" : "Joss house", "total" : 1 }
+{ "_id" : "ISO3166-1", "total" : 2 }
+{ "_id" : "name:be-tarask", "total" : 2 }
+{ "_id" : "ISO3166-1:alpha3", "total" : 1 }
+{ "_id" : "Gated Community", "total" : 1 }
+{ "_id" : "name:map-bms", "total" : 2 }
+{ "_id" : "name:th-Latn", "total" : 187 }
+{ "_id" : "สำอำส", "total" : 1 }
+{ "_id" : "สินค้า", "total" : 3 }
+{ "_id" : "ประเภท", "total" : 1 }
+{ "_id" : "food style", "total" : 3 }
+{ "_id" : "made by", "total" : 2 }
+{ "_id" : "ึึname", "total" : 1 }
