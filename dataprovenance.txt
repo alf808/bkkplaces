@@ -9,4 +9,4 @@ For this project, I have taken the opportunity to explore Bangkok with data from
 
 I have lived, studied, and worked in Bangkok since the 1980s. To me it feels like a second or third home. The chaotic 80s led to chaotic 90s into less chaotic 2000s and 2010s. These days when I go back to Bangkok, I am content in staying in my small neighborhood of Silom in Bang Rak district. But if I do venture out, I take the skytrains or the subways. What took 3 or 4 hours in the 80s to travel within the city, it now takes minutes with all the modern transportation.
 
-As you ride the skytrains, the crowded splendor of Bangkok is in front of your eyes. There are so many streets, temples, and other places to explore. Is there some order to any of this?
+As you ride the skytrains, the crowded splendor of Bangkok is in front of your eyes. There are so many streets, temples, and other places to explore. Is there some order to any of this? At least there is data to wrangle. Let's explore. The area concerned is illustrated and highlighted below.

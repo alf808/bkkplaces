@@ -1,6 +1,7 @@
 Resources
 
 – Udacity's course on Data Wrangling with MongoDB
+– tutorial webcast: https://plus.google.com/events/cqsk1955ll4d4n734cuj94put2g?authkey=CIeWy_ao9reUCg 
 – https://mapzen.com/data/metro-extracts
 – http://www.json.org/
 – https://wiki.python.org/moin/PythonXml
