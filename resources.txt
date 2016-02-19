@@ -7,5 +7,6 @@ Resources
 – https://wiki.python.org/moin/PythonXml
 – https://docs.mongodb.org/getting-started/python/
 – http://wiki.openstreetmap.org/wiki/Map_Features
+– https://en.wikipedia.org/wiki/Postal_codes_in_Thailand
 – https://en.wikipedia.org/wiki/Telephone_numbers_in_Thailand
 – https://en.wikipedia.org/wiki/Bangkok

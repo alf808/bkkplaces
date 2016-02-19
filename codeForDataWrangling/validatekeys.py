@@ -5,7 +5,7 @@ import pprint
 import re
 """
 count the key types in of each of four categories in a dictionary:
-  "alphanum", for tags that contain only lowercase letters and are valid,
+  "alphanum", for tags that contain only alpha-numeric chars and underscore and are valid,
   "alphanum_colon", for otherwise valid tags with a colon in their names,
   "problemchars", for tags with problematic characters, and
   "other", for other tags that do not fall into the other three categories.

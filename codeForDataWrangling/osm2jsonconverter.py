@@ -11,9 +11,35 @@ alphanum = re.compile(r'^([a-zA-Z0-9]|_)*$')
 alphanum_colon = re.compile(r'^([a-zA-Z0-9]|_)*:([a-zA-Z0-9]|_)*$')
 # added hyphen as a problem char
 problemchars = re.compile(r'[=\-\+/&<>;\'"\?%#$@\,\. \t\r\n]')
-addresschars = re.compile(r'addr:(\w+)')
+postcode_th = re.compile(r'^(\d{5}).*$')
+phone_rid66 = re.compile(r'^\D*66\D*(.*)$')
+
 CREATED = [ "version", "changeset", "timestamp", "user", "uid"]
 OSM_FILE = 'bangkok_thailand.osm'
+
+def cleanpostcode(code):
+    m = postcode_th.match(code)
+    # postcode will be passed here and compared to postcode_th
+    # grab only the first 5 digits
+    if m:
+        cleaned = m.group(1)
+    # if not 5 digit match, then return the most common postal code in Bangkok
+    else:
+        cleaned = "10200"
+    return cleaned
+
+def cleanphones(phone):
+    # those with multiple phone numbers will be split and place in an array
+    ph = phone.split(";")
+    ph_array = []
+    for item in ph:
+        # if number contains 66, take it out and return the remaining numbers
+        m = phone_rid66.match(item)
+        if m:
+            item = m.group(1)
+        if item:
+            ph_array.append(item)
+    return ph_array
 
 def shape_element(element):
     # create document 
@@ -22,24 +48,23 @@ def shape_element(element):
     if element.tag == "node" or element.tag == "way" :
         # start creating a json document
         node = {'created':{}, 'tagtype':element.tag}
-        for item in element.attrib:
+        # nitem for node name, aname for attrib value
+        for nitem in element.attrib:
             try:
-                key_name = element.attrib[item]
+                aname = element.attrib[nitem]
             except KeyError:
                 continue
-            if item == 'lat' or item == 'lon':
+            if nitem == 'lat' or nitem == 'lon':
                 continue
-            if item in CREATED:
-                node['created'][item] = key_name
+            if nitem in CREATED:
+                node['created'][nitem] = aname
             else:
-                node[item] = key_name
+                node[nitem] = aname
         try:
             node['pos']=[float(element.attrib['lat']),float(element.attrib['lon'])]
         except KeyError:
             pass
         
-        if 'bkkaddress' not in node.keys():
-            node['bkkaddress'] = {}
         # Iterate through the content of the tag 'tag'
         for item in element.iter('tag'):
             # handle attribute k 
@@ -50,21 +75,33 @@ def shape_element(element):
 
             if alphanum_colon.match(k):
                 k_list = k.split(":")
+                k1 = k_list[0]
+                k2 = k_list[1]
                 # handle attribute k with name containing "addr:"
                 # otherwise attribute k without
-                if k.startswith('addr:'):
-                    node['bkkaddress'][k_list[1]] = v
+                if k1 == 'addr':
+                    if 'bkkaddress' not in node.keys():
+                        node['bkkaddress'] = {}
+                    # fix postcode to 5-digit characters
+                    if k2 == 'postcode':
+                        node['bkkaddress'][k2] = cleanpostcode(v)
+                    else:
+                        node['bkkaddress'][k2] = v
 
                 else:
                     # if it does not begin with addr then create underscored key
-                    ks = k_list[0] + "_" + k_list[1]
+                    ks = k1 + "_" + k2
                     node[ks] = v
  
             if alphanum.match(k):
-                node[k] = v
+                if k == 'phone':
+                    if 'phone' not in node.keys():
+                        node['phone'] = {}
+                    node['phone']['countrycode'] = 66
+                    node['phone']['numbers'] = cleanphones(v)
 
-        if not node['bkkaddress']:
-            node.pop('bkkaddress',None)
+                else:
+                    node[k] = v
 
         # for "way" tag place all "nd" in an array node_refs
         if element.tag == "way":
